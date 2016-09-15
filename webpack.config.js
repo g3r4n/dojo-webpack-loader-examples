@@ -60,7 +60,7 @@ module.exports = {
 
         // Languages for dojo/nls module which will be in result pack.
         includeLanguages: ['en', 'ru', 'fr']
-    }
+    },
 
     // Minimal config if dijit package is not used:
     // dojoWebpackLoader: {
@@ -68,11 +68,11 @@ module.exports = {
     //}
 
     // Uglify bundle
-    // plugins: [
-    //     new webpack.optimize.UglifyJsPlugin({
-    //         compress: { warnings: false }
-    //     })
-    // ]
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: { warnings: false }
+        })
+    ]
 
 
 };
