@@ -67,5 +67,12 @@ module.exports = {
     //    dojoCorePath: path.resolve(__dirname, './dojo/dojo')
     //}
 
+    // Uglify bundle
+    // plugins: [
+    //     new webpack.optimize.UglifyJsPlugin({
+    //         compress: { warnings: false }
+    //     })
+    // ]
+
 
 };
