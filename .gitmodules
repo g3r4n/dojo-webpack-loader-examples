@@ -13,3 +13,6 @@
 [submodule "esri"]
 	path = esri
 	url = https://github.com/Esri/arcgis-js-api
+[submodule "dojo/dojox"]
+	path = dojo/dojox
+	url = https://github.com/dojo/dojox

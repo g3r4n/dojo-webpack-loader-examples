@@ -2,7 +2,7 @@ var webpack = require("webpack");
 var path = require("path");
 
 var entry_list = [
-    "dojo_01_animation",
+    /*"dojo_01_animation",
     "dojo_02_topic",
     "dojo_03_keyboard",
     "dojo_04_request",
@@ -17,7 +17,8 @@ var entry_list = [
     "dgrid_04_comp_col",
     "dgrid_05_single_query",
     "dgrid_06_summary_row",
-    "dgrid_07_dropdown"
+    "dgrid_07_dropdown",*/
+    "esri_01_hello"
 ];
 var entry = {};
 entry_list.forEach(function(e) { entry[e] = path.resolve(__dirname, "./src/" + e) });
@@ -32,9 +33,11 @@ module.exports = {
     resolve: {
         alias: {
             "dojo": path.resolve(__dirname, './dojo/dojo'),
+            "dojox": path.resolve(__dirname, './dojo/dojox'),
             "dstore": path.resolve(__dirname, './dojo/dstore'),
             "dijit": path.resolve(__dirname, './dojo/dijit'),
-            "dgrid": path.resolve(__dirname, './dojo/dgrid')
+            "dgrid": path.resolve(__dirname, './dojo/dgrid'),
+            "esri": path.resolve(__dirname, './esri'),
         }
     },
     devtool: 'source-map',
